@@ -14,7 +14,8 @@
 
 <style>
 body {
-  background-image: url("./grandma-moon.jpg");
+  background-image: url("grandma-moon.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -25,12 +26,13 @@ body {
   height: 100vh;
   justify-content: center;
 }
-.wrapper div {
-  width: calc(100% / 3);
+.wrapper > div {
+  padding: 1rem;
+  width: calc(100vw / 3);
 }
 .wrapper img {
-  width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
+  width: calc(90vw / 3);
 }
 </style>
 
